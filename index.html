@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sami's Smile Studio – Family Dental Clinic, Lahore</title>
+  <meta name="description" content="Sami's Smile Studio Family Dental Clinic in Bahria Orchard, Lahore. Expert dental care for the whole family. Open daily until 10 PM. Book your appointment today." />
+  <meta name="keywords" content="dental clinic Lahore, family dentist Bahria Orchard, teeth whitening Lahore, root canal Lahore, Dr Sami dentist" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://samismilestudio.pk/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sami's Smile Studio – Family Dental Clinic, Lahore" />
+  <meta property="og:description" content="Expert family dental care in Bahria Orchard, Lahore. Open daily until 10 PM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samismilestudio.pk/" />
+  <meta property="og:image" content="https://samismilestudio.pk/og-image.jpg" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Sami's Smile Studio Family Dental Clinic",
+    "image": "https://samismilestudio.pk/og-image.jpg",
+    "url": "https://samismilestudio.pk",
+    "telephone": "+923020413613",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "16, Central Commercial, Bahria Central District Orchard",
+      "addressLocality": "Lahore",
+      "postalCode": "54780",
+      "addressCountry": "PK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.3827,
+      "longitude": 74.1777
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "12"
+    },
+    "openingHours": "Mo-Su 00:00-22:00",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── RESET & BASE ─────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F8F6F2;
+      color: #1C2B3A;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ─── TOKENS ───────────────────────────────────── */
+    :root {
+      --navy:    #0B1F3A;
+      --teal:    #2BBFB3;
+      --teal-dk: #1E9E93;
+      --gold:    #C9A84C;
+      --cream:   #F8F6F2;
+      --white:   #FFFFFF;
+      --slate:   #64748B;
+      --mist:    #EAF8F7;
+      --border:  #E2DDD6;
+      --shadow:  0 4px 24px rgba(11,31,58,.08);
+      --shadow-lg: 0 12px 48px rgba(11,31,58,.14);
+      --radius:  16px;
+      --radius-sm: 8px;
+    }
+
+    /* ─── TYPOGRAPHY ───────────────────────────────── */
+    .serif { font-family: 'DM Serif Display', serif; }
+    h1,h2,h3,h4 { font-family: 'DM Serif Display', serif; line-height: 1.2; color: var(--navy); }
+    h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+    h2 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); }
+    h3 { font-size: 1.3rem; }
+    p  { color: var(--slate); font-size: 1rem; line-height: 1.75; }
+
+    /* ─── LAYOUT UTILS ─────────────────────────────── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .section    { padding: 96px 0; }
+    .section-sm { padding: 64px 0; }
+    .label {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: var(--mist);
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+    }
+    .text-center { text-align: center; }
+
+    /* ─── BUTTONS ──────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: .95rem;
+      cursor: pointer;
+      border: none;
+      transition: all .25s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--teal);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--teal-dk); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(43,191,179,.35); }
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 2px solid var(--navy);
+    }
+    .btn-outline:hover { background: var(--navy); color: var(--white); transform: translateY(-2px); }
+    .btn-white {
+      background: var(--white);
+      color: var(--navy);
+    }
+    .btn-white:hover { background: var(--cream); transform: translateY(-2px); box-shadow: var(--shadow); }
+
+    /* ─── NAVBAR ───────────────────────────────────── */
+    #navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 20px 0;
+      transition: all .35s ease;
+    }
+    #navbar.scrolled {
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 2px 20px rgba(11,31,58,.08);
+      padding: 14px 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-logo-mark {
+      width: 40px; height: 40px;
+      background: var(--teal);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-logo-mark svg { width: 22px; height: 22px; fill: white; }
+    .nav-logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.15rem;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    #navbar:not(.scrolled) .nav-logo-text { color: white; }
+    .nav-logo-sub {
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      color: var(--teal);
+      text-transform: uppercase;
+    }
+    #navbar:not(.scrolled) .nav-logo-sub { color: rgba(255,255,255,.7); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: .88rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.85);
+      transition: color .2s;
+    }
+    #navbar.scrolled .nav-links a { color: var(--slate); }
+    .nav-links a:hover { color: var(--teal) !important; }
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
+    .nav-phone {
+      font-size: .85rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.9);
+      transition: color .2s;
+    }
+    #navbar.scrolled .nav-phone { color: var(--navy); }
+    .nav-phone:hover { color: var(--teal) !important; }
+    .nav-btn {
+      background: var(--teal);
+      color: white;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: .85rem;
+      font-weight: 600;
+      transition: all .25s;
+    }
+    .nav-btn:hover { background: var(--teal-dk); transform: translateY(-1px); }
+    #navbar:not(.scrolled) .nav-btn { background: rgba(255,255,255,.2); border: 1.5px solid rgba(255,255,255,.4); }
+    #navbar:not(.scrolled) .nav-btn:hover { background: rgba(255,255,255,.35); }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      width: 24px; height: 2px;
+      background: white;
+      border-radius: 2px;
+      transition: all .3s;
+    }
+    #navbar.scrolled .hamburger span { background: var(--navy); }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--navy);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 1.4rem; font-family: 'DM Serif Display', serif; color: white; }
+    .mobile-menu a:hover { color: var(--teal); }
+    .mobile-close {
+      position: absolute; top: 24px; right: 24px;
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; color: white; font-size: 1.4rem;
+    }
+
+    /* ─── HERO ─────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--navy) 0%, #132d52 60%, #1a3a6e 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+    .hero-bg-pattern {
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 20% 50%, rgba(43,191,179,.08) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(201,168,76,.06) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .hero-content { position: relative; z-index: 2; }
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(43,191,179,.15);
+      border: 1px solid rgba(43,191,179,.3);
+      color: var(--teal);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .hero-label-dot { width: 6px; height: 6px; background: var(--teal); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.8)} }
+    .hero-title { color: white; margin-bottom: 24px; }
+    .hero-title em { color: var(--teal); font-style: normal; }
+    .hero-sub { color: rgba(255,255,255,.7); font-size: 1.1rem; margin-bottom: 40px; max-width: 480px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+    .hero-stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      color: white;
+      line-height: 1;
+    }
+    .hero-stat-num span { color: var(--teal); }
+    .hero-stat-label { font-size: .78rem; color: rgba(255,255,255,.55); margin-top: 4px; letter-spacing: .04em; }
+
+    /* Hero visual */
+    .hero-visual { position: relative; z-index: 2; }
+    .hero-card-main {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 40px;
+      position: relative;
+    }
+    .hero-tooth-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .hero-tooth-svg {
+      width: 160px; height: 160px;
+      filter: drop-shadow(0 0 40px rgba(43,191,179,.4));
+      animation: floatTooth 4s ease-in-out infinite;
+    }
+    @keyframes floatTooth {
+      0%,100% { transform: translateY(0) rotate(-2deg); }
+      50%      { transform: translateY(-12px) rotate(2deg); }
+    }
+    .hero-badge {
+      position: absolute;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 12px 18px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-badge-rating { top: 24px; right: -20px; }
+    .hero-badge-hours  { bottom: 80px; left: -20px; }
+    .hero-badge svg    { width: 20px; height: 20px; }
+    .badge-title   { font-weight: 700; font-size: .85rem; color: var(--navy); }
+    .badge-sub     { font-size: .72rem; color: var(--slate); }
+    .stars-inline  { color: #F59E0B; font-size: .85rem; letter-spacing: 1px; }
+    .hero-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .hero-feature {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-feature-icon {
+      width: 32px; height: 32px;
+      background: rgba(43,191,179,.15);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .hero-feature-icon svg { width: 16px; height: 16px; stroke: var(--teal); fill: none; stroke-width: 2; }
+    .hero-feature-text { font-size: .8rem; color: rgba(255,255,255,.8); font-weight: 500; line-height: 1.3; }
+
+    /* ─── ANNOUNCEMENT STRIP ───────────────────────── */
+    .strip {
+      background: var(--teal);
+      padding: 14px 0;
+      overflow: hidden;
+    }
+    .strip-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .strip-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .85rem;
+      font-weight: 600;
+      color: white;
+      white-space: nowrap;
+    }
+    .strip-item svg { width: 16px; height: 16px; stroke: rgba(255,255,255,.8); fill: none; stroke-width: 2; }
+
+    /* ─── ABOUT ────────────────────────────────────── */
+    #about { background: var(--white); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-visual {
+      position: relative;
+    }
+    .about-image-block {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: linear-gradient(145deg, var(--mist), #d4f5f2);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-image-inner {
+      width: 85%;
+      height: 85%;
+      background: linear-gradient(145deg, #c8f0ed, #e8faf9);
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+    .about-icon-large {
+      width: 80px; height: 80px;
+      background: var(--teal);
+      border-radius: 20px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .about-icon-large svg { width: 44px; height: 44px; stroke: white; fill: none; stroke-width: 1.5; }
+    .about-img-caption { font-size: .85rem; color: var(--slate); font-style: italic; text-align: center; }
+    .about-float-card {
+      position: absolute;
+      right: -28px;
+      bottom: 48px;
+      background: var(--white);
+      box-shadow: var(--shadow-lg);
+      border-radius: 16px;
+      padding: 20px 24px;
+      min-width: 180px;
+    }
+    .about-float-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.4rem;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .about-float-num span { color: var(--teal); }
+    .about-float-label { font-size: .8rem; color: var(--slate); margin-top: 4px; }
+    .about-content { }
+    .about-content h2 { margin-bottom: 20px; }
+    .about-content > p { margin-bottom: 32px; }
+    .about-pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .about-pillar {
+      padding: 20px;
+      background: var(--cream);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--teal);
+    }
+    .about-pillar h4 { font-family: 'Inter', sans-serif; font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .about-pillar p  { font-size: .82rem; line-height: 1.6; }
+
+    /* ─── SERVICES ─────────────────────────────────── */
+    #services { background: var(--cream); }
+    .services-header { text-align: center; max-width: 560px; margin: 0 auto 56px; }
+    .services-header h2 { margin-bottom: 16px; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      border: 1px solid var(--border);
+      transition: all .3s ease;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--teal);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s ease;
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: transparent; }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon {
+      width: 52px; height: 52px;
+      background: var(--mist);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+      transition: background .3s;
+    }
+    .service-card:hover .service-icon { background: var(--teal); }
+    .service-icon svg { width: 26px; height: 26px; stroke: var(--teal); fill: none; stroke-width: 1.8; transition: stroke .3s; }
+    .service-card:hover .service-icon svg { stroke: white; }
+    .service-card h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 10px; }
+    .service-card p  { font-size: .85rem; line-height: 1.65; }
+
+    /* ─── WHY US ────────────────────────────────────── */
+    #why {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    #why::before {
+      content: '';
+      position: absolute;
+      top: -50%; right: -20%;
+      width: 60vw; height: 60vw;
+      background: radial-gradient(circle, rgba(43,191,179,.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .why-content .label { background: rgba(43,191,179,.15); }
+    .why-content h2 { color: white; margin-bottom: 20px; }
+    .why-content > p { color: rgba(255,255,255,.65); margin-bottom: 40px; }
+    .why-features { display: flex; flex-direction: column; gap: 20px; }
+    .why-feature {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .why-feature-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: rgba(43,191,179,.12);
+      border: 1px solid rgba(43,191,179,.2);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .3s;
+    }
+    .why-feature:hover .why-feature-icon { background: var(--teal); border-color: var(--teal); }
+    .why-feature-icon svg { width: 20px; height: 20px; stroke: var(--teal); fill: none; stroke-width: 2; transition: stroke .3s; }
+    .why-feature:hover .why-feature-icon svg { stroke: white; }
+    .why-feature-body h4 { color: white; font-family: 'Inter', sans-serif; font-weight: 600; font-size: .95rem; margin-bottom: 4px; }
+    .why-feature-body p  { color: rgba(255,255,255,.55); font-size: .85rem; }
+    .why-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .why-stat-card {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+      transition: all .3s;
+    }
+    .why-stat-card:hover { background: rgba(43,191,179,.1); border-color: rgba(43,191,179,.3); }
+    .why-stat-card:nth-child(2) { margin-top: 32px; }
+    .why-stat-card:nth-child(4) { margin-top: -32px; }
+    .why-stat-big {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.6rem;
+      color: white;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .why-stat-big em { color: var(--teal); font-style: normal; }
+    .why-stat-label { font-size: .8rem; color: rgba(255,255,255,.55); line-height: 1.4; }
+
+    /* ─── REVIEWS ───────────────────────────────────── */
+    #reviews { background: var(--white); }
+    .reviews-header { text-align: center; max-width: 520px; margin: 0 auto 56px; }
+    .reviews-header h2 { margin-bottom: 16px; }
+    .overall-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 12px 24px;
+      margin-top: 20px;
+    }
+    .rating-big { font-family: 'DM Serif Display', serif; font-size: 2rem; color: var(--navy); }
+    .rating-stars { font-size: 1.1rem; color: #F59E0B; letter-spacing: 2px; }
+    .rating-source { font-size: .8rem; color: var(--slate); }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .review-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      position: relative;
+      transition: all .3s;
+    }
+    .review-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    .review-quote {
+      font-size: 3rem;
+      line-height: 1;
+      color: var(--teal);
+      opacity: .3;
+      font-family: Georgia, serif;
+      margin-bottom: -8px;
+    }
+    .review-text { font-size: .9rem; color: #3D5166; line-height: 1.75; margin-bottom: 24px; font-style: italic; }
+    .review-stars { color: #F59E0B; font-size: .85rem; margin-bottom: 16px; }
+    .review-author { display: flex; align-items: center; gap: 12px; }
+    .review-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal), var(--teal-dk));
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'DM Serif Display', serif;
+      color: white;
+      font-size: 1rem;
+    }
+    .review-name  { font-weight: 600; font-size: .88rem; color: var(--navy); }
+    .review-via   { font-size: .75rem; color: var(--slate); }
+    .review-google { display: inline-flex; align-items: center; gap: 4px; }
+    .google-g { color: #4285F4; font-weight: 700; font-size: .72rem; }
+
+    /* ─── APPOINTMENT ───────────────────────────────── */
+    #appointment { background: var(--cream); }
+    .appt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .appt-info h2 { margin-bottom: 20px; }
+    .appt-info > p { margin-bottom: 36px; }
+    .appt-contact-items { display: flex; flex-direction: column; gap: 20px; }
+    .appt-contact-item { display: flex; gap: 16px; align-items: flex-start; }
+    .appt-contact-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: var(--mist);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .appt-contact-icon svg { width: 20px; height: 20px; stroke: var(--teal); fill: none; stroke-width: 2; }
+    .appt-contact-title { font-weight: 600; font-size: .88rem; color: var(--navy); margin-bottom: 2px; }
+    .appt-contact-val   { font-size: .85rem; color: var(--slate); }
+    .appt-form {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+    }
+    .appt-form h3 { font-size: 1.3rem; margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .form-group label { font-size: .82rem; font-weight: 600; color: var(--navy); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 12px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: 'Inter', sans-serif;
+      font-size: .9rem;
+      color: var(--navy);
+      background: var(--cream);
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(43,191,179,.12);
+      background: white;
+    }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-submit {
+      width: 100%;
+      background: var(--teal);
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 50px;
+      font-size: .95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .25s;
+      margin-top: 4px;
+    }
+    .form-submit:hover { background: var(--teal-dk); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(43,191,179,.35); }
+    .form-note { font-size: .78rem; color: var(--slate); text-align: center; margin-top: 12px; }
+
+    /* ─── LOCATION ─────────────────────────────────── */
+    #location { background: var(--white); }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .map-container {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      height: 400px;
+      background: var(--mist);
+      position: relative;
+    }
+    .map-container iframe {
+      width: 100%; height: 100%;
+      border: none;
+    }
+    .map-placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      color: var(--slate);
+    }
+    .map-placeholder svg { width: 48px; height: 48px; stroke: var(--teal); fill: none; stroke-width: 1.5; }
+    .map-placeholder p { font-size: .9rem; }
+    .location-info { display: flex; flex-direction: column; gap: 28px; padding-top: 8px; }
+    .location-info h2 { margin-bottom: 4px; }
+    .location-details { display: flex; flex-direction: column; gap: 20px; }
+    .location-detail { display: flex; gap: 16px; align-items: flex-start; }
+    .location-detail-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: var(--mist);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .location-detail-icon svg { width: 20px; height: 20px; stroke: var(--teal); fill: none; stroke-width: 2; }
+    .location-detail-title { font-weight: 600; font-size: .88rem; color: var(--navy); margin-bottom: 3px; }
+    .location-detail-val   { font-size: .85rem; color: var(--slate); line-height: 1.6; }
+    .location-detail a:hover { color: var(--teal); }
+    .hours-grid { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; }
+    .hours-open { color: #059669; font-weight: 600; font-size: .85rem; }
+
+    /* ─── FAQ ───────────────────────────────────────── */
+    #faq { background: var(--cream); }
+    .faq-header { text-align: center; max-width: 520px; margin: 0 auto 52px; }
+    .faq-header h2 { margin-bottom: 14px; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: box-shadow .2s;
+    }
+    .faq-item:hover { box-shadow: var(--shadow); }
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      cursor: pointer;
+      user-select: none;
+      gap: 16px;
+    }
+    .faq-q-text { font-weight: 600; font-size: .95rem; color: var(--navy); }
+    .faq-chevron {
+      width: 24px; height: 24px; flex-shrink: 0;
+      background: var(--mist);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .3s;
+    }
+    .faq-chevron svg { width: 14px; height: 14px; stroke: var(--teal); fill: none; stroke-width: 2.5; transition: transform .3s; }
+    .faq-item.open .faq-chevron { background: var(--teal); }
+    .faq-item.open .faq-chevron svg { stroke: white; transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .35s ease;
+    }
+    .faq-answer-inner { padding: 0 24px 20px; font-size: .9rem; color: var(--slate); line-height: 1.75; }
+    .faq-item.open .faq-answer { max-height: 300px; }
+
+    /* ─── FOOTER ───────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,.65);
+      padding: 72px 0 32px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .footer-brand { }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .footer-logo-mark {
+      width: 38px; height: 38px;
+      background: var(--teal);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .footer-logo-mark svg { width: 20px; height: 20px; fill: white; }
+    .footer-logo-name { font-family: 'DM Serif Display', serif; color: white; font-size: 1rem; line-height: 1.2; }
+    .footer-logo-sub { font-size: .65rem; color: rgba(255,255,255,.4); letter-spacing: .08em; text-transform: uppercase; }
+    .footer-brand > p { font-size: .85rem; line-height: 1.7; margin-bottom: 24px; }
+    .footer-socials { display: flex; gap: 10px; }
+    .footer-social {
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,.08);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .25s;
+    }
+    .footer-social:hover { background: var(--teal); }
+    .footer-social svg { width: 16px; height: 16px; fill: rgba(255,255,255,.7); transition: fill .2s; }
+    .footer-social:hover svg { fill: white; }
+    .footer-col h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: .85rem; color: rgba(255,255,255,.55); transition: color .2s; }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-contact-items { display: flex; flex-direction: column; gap: 14px; }
+    .footer-contact-item { display: flex; gap: 10px; align-items: flex-start; }
+    .footer-contact-item svg { width: 15px; height: 15px; stroke: var(--teal); fill: none; stroke-width: 2; flex-shrink: 0; margin-top: 2px; }
+    .footer-contact-val { font-size: .83rem; color: rgba(255,255,255,.55); line-height: 1.5; }
+    .footer-contact-val a { color: rgba(255,255,255,.55); }
+    .footer-contact-val a:hover { color: var(--teal); }
+    .footer-bottom {
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: .8rem; color: rgba(255,255,255,.35); }
+    .footer-bottom a { color: rgba(255,255,255,.5); }
+    .footer-bottom a:hover { color: var(--teal); }
+
+    /* ─── FLOATING CTA ─────────────────────────────── */
+    .float-cta {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 800;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-end;
+    }
+    .float-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 20px;
+      border-radius: 50px;
+      font-size: .85rem;
+      font-weight: 600;
+      color: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,.25);
+      transition: all .25s;
+      cursor: pointer;
+    }
+    .float-btn:hover { transform: scale(1.04); }
+    .float-btn-call { background: var(--navy); }
+    .float-btn-book { background: var(--teal); }
+    .float-btn svg { width: 18px; height: 18px; }
+
+    /* ─── ANIMATIONS ───────────────────────────────── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .fade-in-delay-1 { transition-delay: .1s; }
+    .fade-in-delay-2 { transition-delay: .2s; }
+    .fade-in-delay-3 { transition-delay: .3s; }
+    .fade-in-delay-4 { transition-delay: .4s; }
+    .fade-in-delay-5 { transition-delay: .5s; }
+
+    /* ─── SUCCESS MESSAGE ───────────────────────────── */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 32px;
+      color: var(--teal);
+    }
+    .form-success.show { display: block; }
+    .form-success svg { width: 56px; height: 56px; stroke: var(--teal); fill: none; stroke-width: 1.5; margin: 0 auto 16px; }
+    .form-success h4 { font-size: 1.2rem; color: var(--navy); margin-bottom: 8px; }
+    .form-success p  { font-size: .9rem; color: var(--slate); }
+
+    /* ─── RESPONSIVE ───────────────────────────────── */
+    @media (max-width: 1024px) {
+      .hero-grid { gap: 40px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 72px 0; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .hero-stats { gap: 24px; }
+      .about-grid,
+      .why-grid,
+      .appt-grid,
+      .location-grid { grid-template-columns: 1fr; }
+      .about-visual { display: none; }
+      .why-visual { grid-template-columns: repeat(2, 1fr); }
+      .why-stat-card:nth-child(2),
+      .why-stat-card:nth-child(4) { margin-top: 0; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .nav-links,
+      .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .form-row { grid-template-columns: 1fr; }
+      .about-pillars { grid-template-columns: 1fr; }
+      .float-cta { bottom: 20px; right: 16px; }
+      .float-btn-book span { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+      .strip-inner { gap: 20px; }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── FLOATING CTA ──────────────────────────────── -->
+  <div class="float-cta" aria-label="Quick contact">
+    <a href="tel:+923020413613" class="float-btn float-btn-call" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.79a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.32-.32a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    </a>
+    <a href="#appointment" class="float-btn float-btn-book" aria-label="Book appointment">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Book Now</span>
+    </a>
+  </div>
+
+  <!-- ─── MOBILE MENU ───────────────────────────────── -->
+  <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#reviews" onclick="closeMobile()">Reviews</a>
+    <a href="#faq" onclick="closeMobile()">FAQ</a>
+    <a href="#appointment" onclick="closeMobile()" style="color:var(--teal)">Book Appointment</a>
+    <a href="tel:+923020413613" style="font-size:1rem;color:rgba(255,255,255,.6)">+92 302 041 3613</a>
+  </nav>
+
+  <!-- ─── NAVBAR ────────────────────────────────────── -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="Sami's Smile Studio home">
+          <div class="nav-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 8c0 1.5.4 2.8 1.1 4L8 19c.4 1.2 1.5 2 2.7 2h2.6c1.2 0 2.3-.8 2.7-2l1.9-7C17.6 10.8 18 9.5 18 8c0-3-2.7-6-6-6z"/></svg>
+          </div>
+          <div>
+            <div class="nav-logo-text">Sami's Smile Studio</div>
+            <div class="nav-logo-sub">Family Dental Clinic</div>
+          </div>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="tel:+923020413613" class="nav-phone">+92 302 041 3613</a>
+          <a href="#appointment" class="nav-btn">Book Appointment</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ─── HERO ──────────────────────────────────────── -->
+    <section id="hero" aria-label="Welcome to Sami's Smile Studio">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-label" aria-label="Now open">
+              <span class="hero-label-dot" aria-hidden="true"></span>
+              Open Daily · Closes 10 PM
+            </div>
+            <h1 class="hero-title">Your Family<br>Deserves a <em>Healthier</em><br>Smile</h1>
+            <p class="hero-sub">Compassionate, modern dental care for every age in the heart of Bahria Orchard, Lahore. Where your comfort comes first — always.</p>
+            <div class="hero-actions">
+              <a href="#appointment" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Book Appointment
+              </a>
+              <a href="tel:+923020413613" class="btn btn-outline" style="color:white;border-color:rgba(255,255,255,.4)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.79a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.32-.32a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Call Now
+              </a>
+            </div>
+            <div class="hero-stats" role="list" aria-label="Clinic highlights">
+              <div role="listitem">
+                <div class="hero-stat-num">4.7<span>★</span></div>
+                <div class="hero-stat-label">Google Rating</div>
+              </div>
+              <div role="listitem">
+                <div class="hero-stat-num">10<span>+</span></div>
+                <div class="hero-stat-label">Years Experience</div>
+              </div>
+              <div role="listitem">
+                <div class="hero-stat-num">9<span>+</span></div>
+                <div class="hero-stat-label">Services Offered</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card-main">
+              <!-- Animated tooth SVG -->
+              <div class="hero-tooth-wrapper">
+                <svg class="hero-tooth-svg" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="toothGrad" cx="50%" cy="35%" r="60%">
+                      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/>
+                      <stop offset="100%" stop-color="#c8f0ed" stop-opacity=".9"/>
+                    </radialGradient>
+                    <filter id="toothGlow">
+                      <feGaussianBlur stdDeviation="8" result="blur"/>
+                      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                    </filter>
+                  </defs>
+                  <!-- Tooth body -->
+                  <path d="M100 15 C60 15 30 45 30 75 C30 95 38 110 45 125 C52 140 55 165 58 185 C60 198 66 208 76 208 C84 208 88 200 90 190 C93 178 96 165 100 165 C104 165 107 178 110 190 C112 200 116 208 124 208 C134 208 140 198 142 185 C145 165 148 140 155 125 C162 110 170 95 170 75 C170 45 140 15 100 15Z" fill="url(#toothGrad)" stroke="rgba(43,191,179,0.4)" stroke-width="2"/>
+                  <!-- Shine lines -->
+                  <path d="M75 40 Q80 55 78 70" stroke="rgba(255,255,255,0.7)" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M90 35 Q93 48 91 60" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+                  <!-- Roots suggestion -->
+                  <path d="M80 185 C78 195 76 202 76 208" stroke="rgba(43,191,179,0.3)" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M120 185 C122 195 124 202 124 208" stroke="rgba(43,191,179,0.3)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="hero-features">
+                <div class="hero-feature">
+                  <div class="hero-feature-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                  <span class="hero-feature-text">Sterilized Equipment</span>
+                </div>
+                <div class="hero-feature">
+                  <div class="hero-feature-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+                  <span class="hero-feature-text">All Ages Welcome</span>
+                </div>
+                <div class="hero-feature">
+                  <div class="hero-feature-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                  <span class="hero-feature-text">Open Until 10 PM</span>
+                </div>
+                <div class="hero-feature">
+                  <div class="hero-feature-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="hero-feature-text">Affordable Pricing</span>
+                </div>
+              </div>
+
+              <!-- Floating badges -->
+              <div class="hero-badge hero-badge-rating">
+                <svg viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <div>
+                  <div class="badge-title">4.7 / 5.0</div>
+                  <div class="badge-sub stars-inline">★★★★★</div>
+                </div>
+              </div>
+              <div class="hero-badge hero-badge-hours">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#2BBFB3" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                  <div class="badge-title">Open Daily</div>
+                  <div class="badge-sub">Closes 10 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── STRIP ─────────────────────────────────────── -->
+    <div class="strip" role="complementary" aria-label="Clinic highlights">
+      <div class="container">
+        <div class="strip-inner">
+          <div class="strip-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Open Daily — Closes 10 PM
+          </div>
+          <div class="strip-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.79a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29z"/></svg>
+            +92 302 041 3613
+          </div>
+          <div class="strip-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            4.7★ Google Rated Clinic
+          </div>
+          <div class="strip-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Bahria Orchard, Lahore
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── ABOUT ─────────────────────────────────────── -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual fade-in" aria-hidden="true">
+            <div class="about-image-block">
+              <div class="about-image-inner">
+                <div class="about-icon-large">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <span class="about-img-caption">Modern Dental Care<br>Bahria Orchard, Lahore</span>
+              </div>
+            </div>
+            <div class="about-float-card">
+              <div class="about-float-num">4.7<span>★</span></div>
+              <div class="about-float-label">Google Rating<br>Based on 12 reviews</div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="label">About Our Clinic</span>
+            <h2 id="about-heading" class="fade-in">A Clinic Built Around <em class="serif" style="color:var(--teal);font-style:normal">You & Your Family</em></h2>
+            <p class="fade-in fade-in-delay-1">At Sami's Smile Studio, we believe that great dental health begins with a trusting relationship between patient and doctor. Our clinic was built on a simple promise: every patient deserves expert, compassionate care in a space that feels welcoming — not clinical.</p>
+            <div class="about-pillars fade-in fade-in-delay-2">
+              <div class="about-pillar">
+                <h4>Family-Focused</h4>
+                <p>Care designed for every member of your family, from toddlers to grandparents.</p>
+              </div>
+              <div class="about-pillar">
+                <h4>Patient-First Approach</h4>
+                <p>We take the time to listen, explain, and ensure your comfort at every visit.</p>
+              </div>
+              <div class="about-pillar">
+                <h4>Comfortable Environment</h4>
+                <p>A calm, modern clinic designed to ease dental anxiety and put you at ease.</p>
+              </div>
+              <div class="about-pillar">
+                <h4>Experienced Team</h4>
+                <p>Led by Dr. Sami, whose skill and warmth have earned a loyal community of patients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES ──────────────────────────────────── -->
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services-header">
+          <span class="label">What We Offer</span>
+          <h2 id="services-heading" class="fade-in">Complete Dental Care<br>Under One Roof</h2>
+          <p class="fade-in fade-in-delay-1">From routine checkups to transformative cosmetic procedures, we offer a full spectrum of dental services tailored to each patient's needs.</p>
+        </div>
+        <div class="services-grid" role="list">
+
+          <div class="service-card fade-in" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>General Dentistry</h3>
+            <p>Comprehensive oral health evaluations, routine exams, and all-round dental care to keep your smile healthy year-round.</p>
+          </div>
+
+          <div class="service-card fade-in fade-in-delay-1" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3>Teeth Cleaning</h3>
+            <p>Professional scaling and polishing to remove tartar buildup, prevent gum disease, and leave your teeth sparkling clean.</p>
+          </div>
+
+          <div class="service-card fade-in fade-in-delay-2" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <h3>Dental Fillings</h3>
+            <p>Tooth-colored composite fillings that restore decayed teeth seamlessly, blending naturally with your existing smile.</p>
+          </div>
+
+          <div class="service-card fade-in fade-in-delay-1" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Root Canal Treatment</h3>
+            <p>Gentle, effective endodontic therapy to save an infected tooth and eliminate pain — often completed in a single visit.</p>
+          </div>
+
+          <div class="service-card fade-in fade-in-delay-2" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>
+            </div>
+            <h3>Tooth Extraction</h3>
+            <p>Safe, pain-minimized extractions performed with precision — including wisdom teeth — to protect your overall oral health.</p>
+          </div>
+
+          <div class="service-card fade-in fade-in-delay-3" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>Smile-transforming aesthetic treatments including veneers, bonding, and smile design tailored to your facial features.</p>
+          </div>
+
+          <div class="service-card fade-in" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5s1.5 2 4 2 4-2 4-2"/><path d="M9 8c0-.6.4-1 1-1s1 .4 1 1"/><path d="M13 8c0-.6.4-1 1-1s1 .4 1 1"/></svg>
+            </div>
+            <h3>Teeth Whitening</h3>
+            <p>Professional in-clinic whitening treatments for a noticeably brighter, more confident smile in a single session.</p>
+          </div>
+
+          <div class="service-card fade-in fade-in-delay-1" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Family Dental Care</h3>
+            <p>Comprehensive dental services for every stage of life — from a child's first visit to senior dental wellness.</p>
+          </div>
+
+          <div class="service-card fade-in fade-in-delay-2" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Preventive Checkups</h3>
+            <p>Routine oral health screenings and early-detection examinations to catch small issues before they become big problems.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY CHOOSE US ─────────────────────────────── -->
+    <section id="why" class="section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-content">
+            <span class="label">Why Patients Choose Us</span>
+            <h2 id="why-heading" class="fade-in" style="color:white">The Standard of Care<br>Your Family <em style="color:var(--teal);font-style:normal">Deserves</em></h2>
+            <p class="fade-in fade-in-delay-1">We don't just treat teeth — we build lasting relationships. Every aspect of our clinic is designed to make your dental experience exceptional.</p>
+            <div class="why-features fade-in fade-in-delay-2">
+
+              <div class="why-feature">
+                <div class="why-feature-icon">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="why-feature-body">
+                  <h4>Experienced Dental Team</h4>
+                  <p>Skilled clinicians who combine expertise with genuine care for each patient.</p>
+                </div>
+              </div>
+
+              <div class="why-feature">
+                <div class="why-feature-icon">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <div class="why-feature-body">
+                  <h4>Modern Equipment</h4>
+                  <p>State-of-the-art dental technology for accurate diagnoses and superior outcomes.</p>
+                </div>
+              </div>
+
+              <div class="why-feature">
+                <div class="why-feature-icon">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                </div>
+                <div class="why-feature-body">
+                  <h4>Comfortable Environment</h4>
+                  <p>A calming, anxiety-free atmosphere that makes every visit feel manageable.</p>
+                </div>
+              </div>
+
+              <div class="why-feature">
+                <div class="why-feature-icon">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                </div>
+                <div class="why-feature-body">
+                  <h4>Affordable Care</h4>
+                  <p>Transparent pricing and flexible payment options so quality care stays accessible.</p>
+                </div>
+              </div>
+
+              <div class="why-feature">
+                <div class="why-feature-icon">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </div>
+                <div class="why-feature-body">
+                  <h4>Personalized Treatment Plans</h4>
+                  <p>Every plan is tailored to your unique dental health goals and medical history.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="why-visual fade-in fade-in-delay-2" aria-hidden="true">
+            <div class="why-stat-card">
+              <div class="why-stat-big">4.7<em>★</em></div>
+              <div class="why-stat-label">Average Google<br>Rating</div>
+            </div>
+            <div class="why-stat-card">
+              <div class="why-stat-big">9<em>+</em></div>
+              <div class="why-stat-label">Dental Services<br>Under One Roof</div>
+            </div>
+            <div class="why-stat-card">
+              <div class="why-stat-big">10<em>+</em></div>
+              <div class="why-stat-label">Years of Clinical<br>Experience</div>
+            </div>
+            <div class="why-stat-card">
+              <div class="why-stat-big">7<em>d</em></div>
+              <div class="why-stat-label">Open Daily,<br>Closes 10 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── REVIEWS ───────────────────────────────────── -->
+    <section id="reviews" class="section" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="reviews-header">
+          <span class="label">Patient Reviews</span>
+          <h2 id="reviews-heading" class="fade-in">Words From Our<br>Happy Patients</h2>
+          <p class="fade-in fade-in-delay-1">Don't take our word for it — hear directly from families who trust us with their smiles.</p>
+          <div class="overall-rating fade-in fade-in-delay-2" aria-label="4.7 out of 5 stars based on 12 Google reviews">
+            <span class="rating-big">4.7</span>
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <div class="rating-source">Based on 12 Google Reviews</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card fade-in">
+            <div class="review-quote" aria-hidden="true">"</div>
+            <p class="review-text">The best dentist I have ever seen. After visiting multiple dentists, Dr. Sami provided the best service and exceptional value for money. Highly recommended to anyone looking for quality dental care.</p>
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="review-name">Ahmad K.</div>
+                <div class="review-via"><span class="review-google"><span class="google-g">G</span> Google Review</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card fade-in fade-in-delay-1">
+            <div class="review-quote" aria-hidden="true">"</div>
+            <p class="review-text">Very expert and humble dentist. Successfully treated my father's tooth issue when others couldn't. The experience was smooth, professional, and genuinely caring. Excellent in every way.</p>
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">M</div>
+              <div>
+                <div class="review-name">Muhammad R.</div>
+                <div class="review-via"><span class="review-google"><span class="google-g">G</span> Google Review</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card fade-in fade-in-delay-2">
+            <div class="review-quote" aria-hidden="true">"</div>
+            <p class="review-text">The dentist took time to listen and explain everything in detail. I never felt rushed or dismissed. That level of care and communication is rare. Highly recommended to everyone I know.</p>
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">S</div>
+              <div>
+                <div class="review-name">Sara N.</div>
+                <div class="review-via"><span class="review-google"><span class="google-g">G</span> Google Review</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── APPOINTMENT ───────────────────────────────── -->
+    <section id="appointment" class="section" aria-labelledby="appt-heading">
+      <div class="container">
+        <div class="appt-grid">
+          <div class="appt-info">
+            <span class="label">Book an Appointment</span>
+            <h2 id="appt-heading" class="fade-in">Ready to Visit<br>Our Clinic?</h2>
+            <p class="fade-in fade-in-delay-1">Fill in the form and our team will reach out to confirm your appointment. We're open every day until 10 PM — even evenings and weekends.</p>
+            <div class="appt-contact-items fade-in fade-in-delay-2">
+              <div class="appt-contact-item">
+                <div class="appt-contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.79a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29z"/></svg>
+                </div>
+                <div>
+                  <div class="appt-contact-title">Phone</div>
+                  <div class="appt-contact-val"><a href="tel:+923020413613">+92 302 041 3613</a></div>
+                </div>
+              </div>
+              <div class="appt-contact-item">
+                <div class="appt-contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="appt-contact-title">Address</div>
+                  <div class="appt-contact-val">16, Central Commercial, Bahria Central District Orchard, Lahore, 54780</div>
+                </div>
+              </div>
+              <div class="appt-contact-item">
+                <div class="appt-contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <div class="appt-contact-title">Hours</div>
+                  <div class="appt-contact-val">Open Daily — Closes at 10:00 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="appt-form fade-in fade-in-delay-1">
+            <h3>Request an Appointment</h3>
+            <div id="formContainer">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="fname" placeholder="Your full name" autocomplete="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+92 3XX XXXXXXX" autocomplete="tel" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Service Needed</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option>General Dentistry</option>
+                    <option>Teeth Cleaning</option>
+                    <option>Dental Fillings</option>
+                    <option>Root Canal Treatment</option>
+                    <option>Tooth Extraction</option>
+                    <option>Cosmetic Dentistry</option>
+                    <option>Teeth Whitening</option>
+                    <option>Preventive Checkup</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="date">Preferred Date</label>
+                  <input type="date" id="date" name="date" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" placeholder="Tell us about your concern or any specific questions…"></textarea>
+              </div>
+              <button type="button" class="form-submit" onclick="submitForm()">Confirm Appointment Request</button>
+              <p class="form-note">We'll contact you within a few hours to confirm your booking.</p>
+            </div>
+            <div class="form-success" id="formSuccess">
+              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <h4>Request Received!</h4>
+              <p>Thank you! We'll get in touch shortly to confirm your appointment at Sami's Smile Studio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── LOCATION ──────────────────────────────────── -->
+    <section id="location" class="section" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="location-grid">
+          <div class="map-container fade-in">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.0!2d74.1777!3d31.3827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSami's+Smile+Studio+Dental+Clinic!5e0!3m2!1sen!2spk!4v1700000000000"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Sami's Smile Studio location map"
+              aria-label="Google Maps showing clinic location">
+            </iframe>
+          </div>
+
+          <div class="location-info">
+            <div>
+              <span class="label">Find Us</span>
+              <h2 id="location-heading" class="fade-in">Visit Our<br>Clinic</h2>
+            </div>
+            <div class="location-details fade-in fade-in-delay-1">
+              <div class="location-detail">
+                <div class="location-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="location-detail-title">Address</div>
+                  <div class="location-detail-val">16, Central Commercial<br>Bahria Central District Orchard<br>Lahore, 54780, Pakistan</div>
+                </div>
+              </div>
+              <div class="location-detail">
+                <div class="location-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.79a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29z"/></svg>
+                </div>
+                <div>
+                  <div class="location-detail-title">Phone</div>
+                  <div class="location-detail-val"><a href="tel:+923020413613">+92 302 041 3613</a></div>
+                </div>
+              </div>
+              <div class="location-detail">
+                <div class="location-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <div class="location-detail-title">Opening Hours</div>
+                  <div class="location-detail-val">
+                    <div class="hours-grid">
+                      <span>Monday – Sunday</span><span class="hours-open">Open until 10:00 PM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=Bahria+Orchard+Central+Commercial+Lahore" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="align-self:flex-start">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ ───────────────────────────────────────── -->
+    <section id="faq" class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="faq-header">
+          <span class="label">Common Questions</span>
+          <h2 id="faq-heading" class="fade-in">Frequently Asked<br>Questions</h2>
+          <p class="fade-in fade-in-delay-1">Have a question? We've answered the most common ones below. Always feel free to call us for anything not covered here.</p>
+        </div>
+
+        <div class="faq-list fade-in fade-in-delay-1" role="list">
+
+          <div class="faq-item" role="listitem">
+            <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">How do I book an appointment at Sami's Smile Studio?</span>
+              <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">You can book by filling in the appointment form on this page, or by calling us directly at +92 302 041 3613. We're open every day until 10 PM so there's always a convenient time for you.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">What should I do if I have a dental emergency?</span>
+              <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Call us immediately at +92 302 041 3613. We do our best to accommodate emergency cases on the same day. For after-hours emergencies, please call and leave a message — we'll reach back as quickly as possible.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">Do you accept health insurance?</span>
+              <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">We work with a number of health insurance plans. Please contact us before your visit with your insurance details so we can confirm coverage and help you understand any out-of-pocket costs in advance.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">How long does a teeth whitening session take?</span>
+              <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Professional in-clinic teeth whitening typically takes 45–75 minutes. Results are visible immediately after the session. We'll also advise you on how to maintain your brighter smile at home following treatment.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">Is this clinic suitable for children and seniors?</span>
+              <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Absolutely. We are a family dental clinic welcoming patients of all ages — from young children having their first dental visit to older adults needing restorative or preventive care. Our team is trained to make every age group feel comfortable.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">How often should I visit the dentist?</span>
+              <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">We recommend a dental checkup and professional cleaning at least every six months. Regular visits allow us to catch small issues early and keep your oral health in optimal condition year-round.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 8c0 1.5.4 2.8 1.1 4L8 19c.4 1.2 1.5 2 2.7 2h2.6c1.2 0 2.3-.8 2.7-2l1.9-7C17.6 10.8 18 9.5 18 8c0-3-2.7-6-6-6z"/></svg>
+            </div>
+            <div>
+              <div class="footer-logo-name">Sami's Smile Studio</div>
+              <div class="footer-logo-sub">Family Dental Clinic</div>
+            </div>
+          </div>
+          <p>Compassionate, expert dental care for your whole family. Serving Bahria Orchard and greater Lahore — open daily until 10 PM.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="#" class="footer-social" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/923020413613" class="footer-social" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#reviews">Patient Reviews</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#services">General Dentistry</a></li>
+            <li><a href="#services">Teeth Cleaning</a></li>
+            <li><a href="#services">Root Canal</a></li>
+            <li><a href="#services">Teeth Whitening</a></li>
+            <li><a href="#services">Cosmetic Dentistry</a></li>
+            <li><a href="#services">Family Dental Care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="footer-contact-val">16, Central Commercial<br>Bahria Orchard, Lahore 54780</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.79a2 2 0 012-2.18h3a2 2 0 012 1.72z"/></svg>
+              <span class="footer-contact-val"><a href="tel:+923020413613">+92 302 041 3613</a></span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span class="footer-contact-val">Open Daily<br><strong style="color:rgba(255,255,255,.7)">Until 10:00 PM</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Sami's Smile Studio Family Dental Clinic. All rights reserved.</p>
+        <p>Designed with care · Bahria Orchard, Lahore · <a href="tel:+923020413613">+92 302 041 3613</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ─── NAVBAR SCROLL ──────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ─── MOBILE MENU ────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeMobile() {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    mobileClose.addEventListener('click', closeMobile);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMobile(); });
+
+    // ─── SCROLL ANIMATIONS ──────────────────────────────
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    // ─── FAQ ACCORDION ──────────────────────────────────
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    // Keyboard support for FAQ
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFaq(btn); }
+      });
+    });
+
+    // ─── FORM SUBMIT ────────────────────────────────────
+    function submitForm() {
+      const name = document.getElementById('fname').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      if (!name || !phone) {
+        alert('Please enter your name and phone number to continue.');
+        return;
+      }
+      document.getElementById('formContainer').style.display = 'none';
+      document.getElementById('formSuccess').classList.add('show');
+    }
+
+    // ─── SMOOTH ANCHOR SCROLL ───────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ─── SET DATE MIN ────────────────────────────────────
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+  </script>
+
+</body>
+</html>
